@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { useEffect } from "react";
 import { useParams } from "react-router-dom";
 import Swal from "sweetalert2";
+import Jobs from "./Jobs";
 
 const JobDetails = () => {
   const { id } = useParams();
@@ -22,6 +23,7 @@ const JobDetails = () => {
       Swal.fire(`Entered URL: ${url}`);
     }
   };
+  console.log(id);
   return (
     <div className=" max-w-screen-2xl container mx-auto xl:px-24 px-4">
       <h2>JobDetails: {id}</h2>
